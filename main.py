@@ -1,1 +1,183 @@
 import pyautogui 
+import time
+import pyperclip  
+
+print("=======================================\n")
+print("          Inserindo favoritos          \n")
+print("Prefeitura Municipal de Jaguariúna 2023\n")
+print("=======================================\n\n")
+
+agend = input("Deseja favoritar CartCid Agendamento? \nResponder com s/n: ")
+cartl = input("Deseja favoritar CartCid Login? \nResponder com s/n: ")
+pec = input("Deseja favoritar PEC? \nResponder com s/n: ")
+grp = input ("Deseja favoritar o GTP? \nResponder com s/n: ")
+cartf = input ("Deseja favoritar CartCid Farmácia? \nResponder com s/n: ")
+cartn = input ("Deseja favoritar o CartCid controle? \nResponder com s/n: ")
+siscn = input ("Deseja favoritar o Siscan? \nResponder com s/n: ")
+sgop = input ("Deseja favoritar o SGOP? \nResponder com s/n: ")
+cadsu = input ("Deseja favoritar CadSus? \nResponder com s/n: ")
+
+
+if agend in ['S', 's']:
+   
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('http://cartcid.jaguariuna.sp.gov.br/saude/assist/pmj_agendamento/security_login/')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('Agendamento')
+   time.sleep(1)
+   pyautogui.press('enter')
+
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if cartl in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://cartcid.jaguariuna.sp.gov.br/assist/pmj_cartcid/security_login/')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('CartCid Login')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'n')
+else: 
+    print('')
+
+if pec in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('prefeitura.jaguariuna.sp.gov.br:8080')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('PEC')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if grp in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://sistemas.jaguariuna.sp.gov.br/GRP')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('GRP')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if cartf in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://cartcid.jaguariuna.sp.gov.br/farmacia/reqfarm/login/')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('CartCid Farmácia')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if cartn in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://cartcid.jaguariuna.sp.gov.br/assist/notifica_pmj/control_login/')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('CartCid Controle')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if siscn in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://siscan.saude.gov.br/login.jsf')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('SisCan')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if sgop in ['S', 's']:
+   pyautogui.hotkey('winleft', 'r')
+   pyautogui.write('chrome')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'l')
+   pyautogui.write('https://cadastro.saude.gov.br/operador/iniciarAutoCadastramento.htm')
+   pyautogui.press('enter')
+   time.sleep(1)
+   pyautogui.hotkey('ctrl', 'd')
+   pyautogui.press('delete')
+   pyautogui.write('SGOP')
+   time.sleep(1)
+   pyautogui.press('enter')
+   pyautogui.hotkey('ctrl', 'w')
+else: 
+    print('')
+
+if cadsu in ['S', 's']:
+    pyautogui.hotkey('winleft', 'r')
+    pyautogui.write('chrome')
+    time.sleep(1)
+    pyautogui.press('enter')
+    pyperclip.copy('https://cadastro.saude.gov.br/segcartao/?contextType=external&username=string&contextValue=%2Foam&password=sercure_string&challenge_url=https%3A%2F%2Fcadastro.saude.gov.br%2Fsegcartao&request_id=-5680384401408352939&authn_try_count=0&locale=pt&resource_url=http%253A%252F%252Fcadastro.saude.gov.br%252Fnovocartao%252Frestrito%252FusuarioConsulta.jsp')
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.press('enter')
+    time.sleep(3)
+    pyautogui.press('alt')
+    pyautogui.hotkey('ctrl', 'd')
+    pyautogui.press('delete')
+    pyautogui.write('CadSus')
+    time.sleep(1)
+    pyautogui.press('enter')
+else: 
+    print('')
